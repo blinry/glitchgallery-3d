@@ -1,4 +1,4 @@
-name = "untitled-game"
+name = "the-glitch-gallery"
 
 all: linux macos windows web
 
