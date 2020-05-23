@@ -18,6 +18,8 @@ background_sky = SubResource( 3 )
 ambient_light_color = Color( 0.933333, 0.913725, 0.862745, 1 )
 ambient_light_energy = 1.64
 auto_exposure_enabled = true
+ssao_radius = 0.1
+ssao_quality = 0
 
 [node name="Player" type="KinematicBody"]
 visible = false
@@ -36,6 +38,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74657, 0 )
 
 [node name="Camera" type="Camera" parent="Pivot"]
 environment = SubResource( 4 )
+current = true
 near = 0.01
 
 [node name="Footsteps" type="AudioStreamPlayer" parent="."]

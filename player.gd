@@ -24,7 +24,6 @@ func _process(delta):
     input_movement = input_movement.normalized()
     
     if input_movement.length() != 0:
-        print("ok")
         $Footsteps.stream_paused = false
     else:
         $Footsteps.stream_paused = true
