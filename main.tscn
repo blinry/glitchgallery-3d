@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://wall.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://laminate.jpg" type="Texture" id=13]
 
 [sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.419608, 0.223529, 0.223529, 1 )
 albedo_texture = ExtResource( 11 )
 uv1_scale = Vector3( 10, 10, 1 )
 
@@ -22,6 +23,9 @@ uv1_scale = Vector3( 10, 10, 1 )
 size = Vector3( 10, 10, 0.3 )
 
 [sub_resource type="CubeMesh" id=2]
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0.270588, 0.188235, 0.188235, 1 )
 
 [sub_resource type="SpatialMaterial" id=7]
 albedo_texture = ExtResource( 13 )
@@ -38,6 +42,7 @@ albedo_texture = ExtResource( 12 )
 size = Vector3( 50, 1, 50 )
 
 [sub_resource type="SpatialMaterial" id=9]
+albedo_color = Color( 0.494118, 0.317647, 0.317647, 1 )
 albedo_texture = ExtResource( 13 )
 uv1_scale = Vector3( 200, 100, 200 )
 
@@ -149,6 +154,7 @@ mesh = SubResource( 2 )
 [node name="Roof" type="CSGMesh" parent="."]
 transform = Transform( 3.63109, 0, 0, 0, 2.98023e-08, 1, 0, -3.63109, 1.08215e-07, -16.334, 5.96273, -16.5336 )
 mesh = SubResource( 1 )
+material = SubResource( 10 )
 
 [node name="CSGCombiner2" type="CSGCombiner" parent="."]
 material_override = SubResource( 3 )
